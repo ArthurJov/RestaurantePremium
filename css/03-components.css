@@ -1,0 +1,138 @@
+/* ==========================================================================
+   COMPONENTES GERAIS (Botões, containers, etc)
+   ========================================================================== */
+
+/* Container Principal */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--section-x);
+}
+
+/* Cursor Customizado Desktop */
+.custom-cursor {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none; /* Remove cursor nativo no desktop */
+  }
+  
+  .custom-cursor {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-gold-rich);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease; /* Animação suave para tamanho */
+  }
+
+  .custom-cursor.is-hovering {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(235, 227, 202, 0.2);
+    backdrop-filter: invert(1);
+    mix-blend-mode: normal; /* Para o invert funcionar de forma estilizada */
+  }
+}
+
+/* Espaçamento Padrão de Seções */
+.section-padding {
+  padding: var(--section-y) 0;
+}
+
+/* ==========================================================================
+   BOTÕES
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  padding: 0 2rem;
+  height: 48px; /* Mínimo para toque responsivo */
+  border-radius: 4px; /* Mais elegante do que bordas 100% retas */
+  transition: all var(--dur-base) var(--ease-smooth);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Botão Primário */
+.btn--primary {
+  background-color: var(--color-gold-rich);
+  color: var(--color-bg-base);
+}
+
+@media (hover: hover) {
+  .btn--primary:hover {
+    background-color: var(--color-gold-light);
+    transform: scale(1.02);
+  }
+}
+
+/* Botão Outline */
+.btn--outline {
+  border: 1px solid var(--color-gold-rich);
+  color: var(--color-gold-rich);
+  background-color: transparent;
+}
+
+@media (hover: hover) {
+  .btn--outline:hover {
+    background-color: var(--color-gold-rich);
+    color: var(--color-bg-base);
+  }
+}
+
+/* Botão Texto */
+.btn--text {
+  padding: 0;
+  height: auto;
+  color: var(--color-text-cream);
+  position: relative;
+}
+
+.btn--text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-gold-rich);
+  transition: width var(--dur-fast) var(--ease-smooth);
+}
+
+@media (hover: hover) {
+  .btn--text:hover::after {
+    width: 100%;
+  }
+}
+
+/* Setas para botões */
+.arrow {
+  display: inline-block;
+  transition: transform var(--dur-fast) var(--ease-hover);
+}
+
+@media (hover: hover) {
+  .btn:hover .arrow {
+    transform: translateX(4px) translateY(-2px); /* Diagonal para a direita/cima */
+  }
+}

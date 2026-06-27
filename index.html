@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Metadados SEO -->
+  <title>Gambaro Ristorante Italiano — Massas Artesanais em Lauro de Freitas, BA</title>
+  <meta name="description" content="Gastronomia italiana autêntica desde 2019. Massas artesanais, parmegianas e pratos especiais em Vilas do Atlântico, Lauro de Freitas. Reserve sua mesa ou peça via iFood.">
+
+  <!-- Open Graph (WhatsApp / Instagram preview) -->
+  <meta property="og:title" content="Gambaro Ristorante Italiano">
+  <meta property="og:description" content="Massas artesanais e gastronomia italiana premium em Lauro  
+  de Freitas. 4.8 ★ no Google.">
+  <meta property="og:image" content="./assets/images/hero/hero-main.png">
+  <meta property="og:url" content="https://seusite.github.io/gambaro-ristorante/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="./assets/logo/favicon.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="./css/00-variables.css">
+  <link rel="stylesheet" href="./css/01-base.css">
+  <link rel="stylesheet" href="./css/02-typography.css">
+  <link rel="stylesheet" href="./css/03-components.css">
+  <link rel="stylesheet" href="./css/04-sections.css">
+  <link rel="stylesheet" href="./css/05-animations.css">
+  <link rel="stylesheet" href="./css/06-responsive.css">
+</head>
+<body class="is-loading">
+  <!-- Cursor Magnético Customizado -->
+  <div class="custom-cursor"></div>
+
+  <!-- ==========================================
+       BLOCO 0 - PRELOADER
+       ========================================== -->
+  <div id="preloader">
+    <figure class="preloader__logo">
+      <img src="./assets/logo/logo-main.png" alt="Gambaro Ristorante">
+    </figure>
+  </div>
+
+  <!-- ==========================================
+       BLOCO 1 - HEADER INTELIGENTE
+       ========================================== -->
+  <header class="site-header" id="header">
+    <div class="site-header__container">
+      <a href="#" class="site-header__logo">
+        <img src="./assets/logo/logo-main.png" alt="Gambaro Ristorante">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="site-header__nav">
+        <a href="#manifesto" class="nav-link">A Casa</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#galeria" class="nav-link">Galeria</a>
+      </nav>
+
+      <a href="https://wa.me/5571992546760?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Gambaro%20Ristorante." target="_blank" rel="noopener noreferrer" class="btn btn--outline site-header__cta">Reservar Mesa <span class="arrow">↗</span></a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="site-header__menu-btn" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Mobile Overlay -->
+  <div class="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <a href="#manifesto" class="mobile-link">A Casa</a>
+      <a href="#menu" class="mobile-link">Menu</a>
+      <a href="#galeria" class="mobile-link">Galeria</a>
+      <a href="https://wa.me/5571992546760?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Gambaro%20Ristorante." target="_blank" rel="noopener noreferrer" class="btn btn--outline mobile-cta">Reservar Mesa</a>
+    </nav>
+  </div>
+
+  <!-- ==========================================
+       CONTEÚDO PRINCIPAL
+       ========================================== -->
+  <main>
+    <!-- BLOCO 2 - HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-wrapper">
+        <img src="./assets/images/hero/hero-main.png" alt="Interior do Restaurante Gambaro" class="hero__bg-img">
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <h1 class="hero__title text-display">
+          <div class="js-mask"><span class="js-mask-inner">Uma Tradição que</span></div>
+          <div class="js-mask"><span class="js-mask-inner">se Serve em Cada Prato.</span></div>
+        </h1>
+
+        <p class="hero__subtitle text-lg text-muted js-fade-up">
+          Massas artesanais, sabores autênticos e uma atmosfera que<br>te transporta para a Itália — no coração de Vilas do Atlântico.
+        </p>
+
+        <div class="hero__ctas js-fade-up">
+          <a href="https://wa.me/5571992546760?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Gambaro%20Ristorante." target="_blank" rel="noopener noreferrer" class="btn btn--primary">Reservar Mesa</a>
+          <a href="https://www.ifood.com.br/delivery/lauro-de-freitas-ba/gambaro-massas-vilas-do-atlantico/c538e117-130d-40c0-ac7c-c2f029af748c" target="_blank" rel="noopener noreferrer" class="btn btn--text">Pedir via iFood</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator js-fade-up">
+        <span>↓</span>
+      </div>
+    </section>
+
+    <!-- BLOCO 3 - MANIFESTO (A Experiência) -->
+    <section class="manifesto section-padding" id="manifesto">
+      <div class="container manifesto__grid">
+        <div class="manifesto__img-wrapper js-img-reveal">
+          <img src="./assets/images/manifesto/manifesto-foto.png" alt="Chef Gambaro preparando massa fresca" class="manifesto__img" data-speed="0.9">
+        </div>
+        <div class="manifesto__content">
+          <p class="eyebrow js-fade-up">A Nossa Cozinha</p>
+          <div class="manifesto__separator"></div>
+          <h2 class="text-3xl js-fade-up">Uma jornada de<br>sabor e tradição</h2>
+          <p class="text-muted js-fade-up">
+            Desde 2019, o Gambaro Ristorante carrega a tradição da culinária italiana com orgulho — ingredientes selecionados, massas produzidas na casa e molhos preparados com o cuidado de quem cozinha para a própria família.
+          </p>
+          <p class="text-muted js-fade-up">
+            Do fettuccine ao nosso Gambaro Especial de camarões, cada prato é uma homenagem à gastronomia italiana autêntica. Vem jantar conosco — ou receba a Itália diretamente na sua porta.
+          </p>
+          <div class="manifesto__anchor js-fade-up">
+            <div class="text-xl text-gold" style="line-height: 1.2; font-weight: 600;">4.8★ no<br>Google</div>
+            <div class="text-sm text-muted" style="line-height: 1.4; max-width: 200px;">Mais de 840 clientes avaliaram a experiência Gambaro</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 4 - DESTAQUES DO MENU -->
+    <section class="menu-highlights section-padding" id="menu">
+      <div class="container">
+        <header class="menu__header js-fade-up">
+          <p class="eyebrow">Nossas Especialidades</p>
+          <h2 class="text-3xl">Clássicos Reinventados</h2>
+        </header>
+
+        <ul class="menu-list">
+          <li class="menu-list__item js-menu-item" data-image="./assets/images/pratos/prato-01.png">
+            <div class="menu-list__info">
+              <h3 class="text-xl text-gold">Gambaro Especial de Camarões</h3>
+              <p class="text-sm text-muted">Fettuccine artesanal, molho branco cremoso, camarões frescos, ervilhas, tomate, muçarela gratinada, gorgonzola e pesto caseiro.</p>
+            </div>
+            <div class="menu-list__price">R$ 83,90</div>
+            <div class="menu-list__img-mobile"><img src="./assets/images/pratos/prato-01.png" alt="Gambaro Especial de Camarões"></div>
+          </li>
+          
+          <li class="menu-list__item js-menu-item" data-image="./assets/images/pratos/prato-02.png">
+            <div class="menu-list__info">
+              <h3 class="text-xl text-gold">Carbonara Gambaro</h3>
+              <p class="text-sm text-muted">A união do clássico italiano com o toque exclusivo da casa. A versão mais autoral do nosso chef.</p>
+            </div>
+            <div class="menu-list__price">R$ 83,90</div>
+            <div class="menu-list__img-mobile"><img src="./assets/images/pratos/prato-02.png" alt="Carbonara Gambaro"></div>
+          </li>
+          
+          <li class="menu-list__item js-menu-item" data-image="./assets/images/pratos/prato-03.png">
+            <div class="menu-list__info">
+              <h3 class="text-xl text-gold">Parmegiana di Filetto Mignon</h3>
+              <p class="text-sm text-muted">Nosso filé mignon à parmegiana para compartilhar. Generosa, suculenta e irresistível.</p>
+            </div>
+            <div class="menu-list__price">
+              <span style="font-size: 0.7em;">Família</span> R$ 147,90 <br>
+              <span style="font-size: 0.7em;">Indiv.</span> R$ 76,90
+            </div>
+            <div class="menu-list__img-mobile"><img src="./assets/images/pratos/prato-03.png" alt="Parmegiana di Filetto Mignon"></div>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Container da Imagem Flutuante (Hover Desktop) -->
+      <div class="menu-hover-image js-menu-hover">
+        <img src="" alt="Prato Preview">
+      </div>
+    </section>
+
+    <!-- BLOCO 5 - GALERIA -->
+    <section class="gallery section-padding" id="galeria">
+      <div class="container">
+        <header class="gallery__header js-fade-up">
+          <p class="eyebrow">Atmosfera</p>
+          <h2 class="text-3xl">Nosso Salão</h2>
+        </header>
+
+        <div class="gallery__grid">
+          <div class="gallery__item js-img-reveal"><img src="./assets/images/ambiente/salao-01.png" alt="Interior do restaurante"></div>
+          <div class="gallery__item js-img-reveal"><img src="./assets/images/ambiente/salao-02.png" alt="Adega de vinhos"></div>
+          <div class="gallery__item js-img-reveal"><img src="./assets/images/ambiente/salao-03.png" alt="Mesa posta"></div>
+          <div class="gallery__item js-img-reveal"><img src="./assets/images/ambiente/salao-04.png" alt="Detalhe da decoração"></div>
+          <div class="gallery__item js-img-reveal"><img src="./assets/images/ambiente/salao-05.png" alt="Bar principal"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       BLOCO 6 - FOOTER
+       ========================================== -->
+  <footer class="site-footer" id="reservas">
+    
+    <div class="footer__zona-a">
+      <h2 class="text-3xl text-cream" style="text-align: center;">Reserve sua mesa.<br>Viva uma experiência única.</h2>
+      <div class="footer__zona-a-ctas">
+        <a href="https://wa.me/5571992546760?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Gambaro%20Ristorante." target="_blank" rel="noopener noreferrer" class="btn btn--primary">Reservar Mesa</a>
+        <a href="https://www.ifood.com.br/delivery/lauro-de-freitas-ba/gambaro-massas-vilas-do-atlantico/c538e117-130d-40c0-ac7c-c2f029af748c" target="_blank" rel="noopener noreferrer" class="btn btn--ifood">Pedir via iFood</a>
+      </div>
+    </div>
+
+    <div class="container footer__zona-b">
+      <div>
+        <img src="./assets/logo/logo-main.png" alt="Gambaro Ristorante" style="height: 64px; margin-bottom: 2rem; max-width: 100%; object-fit: contain;">
+        <p class="text-muted text-sm">Desde 2019 servindo alta gastronomia italiana com paixão e excelência.</p>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">Navegação</h3>
+        <ul class="footer__col-list">
+          <li><a href="#manifesto" class="nav-link">A Casa</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#reservas" class="nav-link">Reservas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">Contato</h3>
+        <ul class="footer__col-list">
+          <li>Rua Praia de Pajussara, 656</li>
+          <li>Vilas do Atlântico – Lauro de Freitas/BA</li>
+          <li><a href="tel:+5571992546760" class="nav-link">(71) 99254-6760</a></li>
+          <li><a href="mailto:gambaromassas@gmail.com" class="nav-link">gambaromassas@gmail.com</a></li>
+          <li><br>Terça a Domingo<br>Almoço: 12h00 às 15h30<br>Jantar: 18h30 às 23h00</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__map-wrapper">
+          <div class="map-overlay js-map-overlay">
+            <span>Toque para interagir</span>
+          </div>
+          <iframe
+            src="https://maps.google.com/maps?q=Gambaro+Massas+Vilas+do+Atlantico+Lauro+de+Freitas&output=embed&z=16"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização do Gambaro Ristorante">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__zona-c">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <p>© 2025 Gambaro Ristorante Italiano · Todos os direitos reservados</p>
+        <a href="https://arthur-portifolio.lovable.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link" style="color: var(--color-text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-size: 0.9em; transition: color var(--dur-fast) var(--ease-smooth);">
+          Desenvolvido por Arthur Vieira 
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/gambarorestaurante/" target="_blank" rel="noopener noreferrer" class="nav-link">Instagram</a>
+        <a href="https://wa.me/5571992546760" target="_blank" rel="noopener noreferrer" class="nav-link">WhatsApp</a>
+        <a href="https://www.facebook.com/p/Restaurante-Gambaro-61565463424624/" target="_blank" rel="noopener noreferrer" class="nav-link">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SCRIPTS (Carregados no final para performance)
+       ========================================== -->
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  
+  <!-- GSAP Core & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Aplicação (A ordem importa!) -->
+  <script src="./js/preloader.js"></script>
+  <script src="./js/lenis.js"></script>
+  <script src="./js/animations.js"></script>
+  <script src="./js/main.js"></script>
+
+  <!-- Dados Estruturados (Schema.org — SEO Avançado) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Gambaro Ristorante Italiano",
+    "description": "Gastronomia italiana autêntica com massas artesanais, parmegianas e pratos especiais desde 2019.",
+    "url": "https://seusite.github.io/gambaro-ristorante/",
+    "telephone": "+55-71-99254-6760",
+    "email": "gambaromassas@gmail.com",
+    "servesCuisine": "Italian",
+    "priceRange": "R$ 63–R$ 148",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Praia de Pajussara, 656 QD 28 LT 2",
+      "addressLocality": "Lauro de Freitas",
+      "addressRegion": "BA",
+      "postalCode": "42708-720",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "843"
+    },
+    "sameAs": [
+      "https://www.instagram.com/gambarorestaurante/",
+      "https://www.facebook.com/p/Restaurante-Gambaro-61565463424624/",
+      "https://www.ifood.com.br/delivery/lauro-de-freitas-ba/gambaro-massas-vilas-do-atlantico/c538e117-130d-40c0-ac7c-c2f029af748c"
+    ]
+  }
+  </script>
+
+</body>
+</html>
