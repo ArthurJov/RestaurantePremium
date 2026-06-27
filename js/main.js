@@ -78,6 +78,35 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================================================
+     SMOOTH SCROLL (ANCHOR LINKS)
+     ========================================================================== */
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  anchorLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        e.preventDefault(); // Evita o salto nativo
+        
+        // Compensação do header fixo para a rolagem não cobrir o título
+        const headerOffset = -80; 
+        
+        if (window.appLenis) {
+          window.appLenis.scrollTo(targetElement, {
+            offset: headerOffset,
+            duration: 1.2
+          });
+        } else {
+          // Fallback se o Lenis não estiver ativo
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  /* ==========================================================================
      MAP OVERLAY (Desabilitar UI de mapa cru)
      ========================================================================== */
   const mapOverlay = document.querySelector('.js-map-overlay');
